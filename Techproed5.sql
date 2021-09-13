@@ -1,0 +1,24 @@
+CREATE TABLE employees(
+employee_id NUMBER(6),PRIMARY KEY(employee_id),
+FIRST_NAME VARCHAR2(30) NOT NULL,
+LAST_NAME VARCHAR2(30) NOT NULL,
+EMAIL VARCHAR2(30),
+PHONE_NUMBER VARCHAR2(30),
+HIRE_DATE DATE NOT NULL,
+JOB_ID VARCHAR2(20),
+SALARY NUMBER(8),
+COMMISSION_PCT NUMBER(2),
+MANAGER_ID NUMBER(8),
+DEPARTMENT_ID NUMBER(4)
+);
+
+
+INSERT INTO employees VALUES('000001','Harry','Potter','harry.potter@gmail.com',123456,'01-JAN-2015',0001,12000,25,1202,2001);
+INSERT INTO employees VALUES('000002','Suarz','Jennifer','suarez.jennifer@gmail.com',123456,'01-FEB-2000',0001,20000,25,1202,2001);
+INSERT INTO employees VALUES('000003','Tom','Dick','tom.dick@gmail.com',123456,'01-MAR-2001',0001,24000,25,1202,2001);
+INSERT INTO employees VALUES('000004','Faraz','Mohd','faraz.mohd@gmail.com',123456,'01-DEC-2001',0001,1000,25,1202,2001);
+INSERT INTO employees VALUES('000005','Tevez','Carlos','tevez.carlos@gmail.com',123456,'01-OCT-2003',0001,50500,25,1202,2001);
+INSERT INTO employees VALUES('000006','Neymar','Messi','neymar.messi@gmail.com',123456,'01-OCT-2004',0001,55500,25,1202,2001);
+INSERT INTO employees VALUES('000007','Gerrard','Steven','gerrard.steven@gmail.com',123456,'01-OCT-2005',0001,60500,25,1202,2001);
+
+Select * from employees;
